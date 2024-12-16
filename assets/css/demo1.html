@@ -1,0 +1,50 @@
+#include<iostream.h>
+#include<conio.h>
+class base {
+	public:
+	int a;
+	float b;
+
+	base()
+	{
+		cout<<"Constructor!";
+	}
+
+	void fun()
+	{
+		cout<<"Function";
+	}
+};
+class derive : public base
+{
+	public:
+	int c;
+};
+class subDerived : public base
+{
+	public:
+	int d;
+};
+class subDerived2 : public derive , public subDerived
+{
+	public:
+	int e;
+};
+void main()
+{
+	clrscr();
+	subDerived d1;
+	derive d2;
+	subDerived2 sd1;
+	d1.b=10.5;
+	d2.c=20;
+	d1.d = 50;
+	sd1.d = 90;
+	sd1.c = 100;
+	cout<<"Base : "<<d1.b<<"\n";
+	cout<<"Derived : "<<d2.c<<"\n";
+	cout<<"Sub Derived : "<<d1.d<<"\n";
+	cout<<"Sub Derived 2 : "<<sd1.c;
+	d1.fun();
+	getch();
+}

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HOME</title>
+    <title>Main Navigation</title>
 
     <!-- MDBootstrap CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css" rel="stylesheet" />
@@ -15,9 +15,17 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS (Optional) -->
 
+    <!-- Custom CSS (Optional) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- jQuery (Required by Owl Carousel) -->
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
 </head>
 
 <body>
@@ -40,12 +48,15 @@
                     <!-- Right elements -->
                     <div class="col-md-6 d-flex justify-content-center justify-content-md-end align-items-center">
                         <div class="d-flex">
-                            <div class="phoneno"><i class="fas fa-phone"></i><a href="#" class="mobileno pe-5"> +123
+                            <div class="phoneno"><i class="fas fa-phone"></i><a href="#" class="mobileno pe-5 ps-2">+123
                                     (4567) 890</a></div>
                             <!-- Cart -->
-                            <a class="text-reset me-3" href="#">
-                                <span><i class="fab fa-facebook-f"></i></span>
-                            </a>
+                            <div class="dropdown">
+
+                                <a class="text-reset me-3" href="#">
+                                    <span><i class="fab fa-facebook-f"></i></span>
+                                </a>
+                            </div>
 
                             <!-- Notification -->
                             <div class="dropdown">
@@ -54,6 +65,13 @@
                                     aria-expanded="false">
                                     <i class="fab fa-twitter"></i>
                                 </a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Some news</a></li>
+                                    <li><a class="dropdown-item" href="#">Another news</a></li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </li>
+                                </ul>
                             </div>
 
                             <!-- Languages -->
@@ -62,10 +80,12 @@
                                     role="button" data-mdb-toggle="dropdown" aria-expanded="false">
                                     <i class="fab fa-linkedin-in"></i>
                                 </a>
+
                             </div>
+
                             <!-- User -->
                             <div class="dropdown">
-                                <a href="#"> <i class="fab fa-pinterest-p"></i></a>
+                                <a href=""> <i class="fab fa-pinterest-p"></i></a>
                             </div>
                         </div>
                     </div>
@@ -76,7 +96,7 @@
         <!-- Jumbotron -->
 
         <!-- Navbar -->
-        <nav class="navbar bot navbar-expand-lg navbar-light  ">
+        <nav class="navbar navbar-expand-lg navbar-light ">
             <div class="container justify-content-center justify-content-md-between">
                 <div class="col-md-2 d-flex justify-content-center justify-content-md-start mb-3 mb-md-0">
                     <img src="assets/img/logo.png" alt="">
@@ -87,57 +107,55 @@
                             data-mdb-ripple-init class="btn shadow-0 p-0 me-3" aria-controls="#sidenav-1"
                             aria-haspopup="true">
 
-                            <span>Home</span>
+                            <span>Home <span><i class="fa-solid fa-chevron-down"></i></span></span>
                         </a>
+                        <ul class="dropdown">
+                            <li><a href="#home1">Home1</a></li>
+                            <li><a href="#home2">Home2</a></li>
+                            <li><a href="#home3">Home3</a></li>
+                            <li><a href="#home4">Home4</a></li>
+                            <li><a href="#home5">Home5</a></li>
+                            <li><a href="#home6">Home6</a></li>
+                            <li><a href="#home7">Home7</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item me-2 me-lg-0 d-none d-md-inline-block">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                        <ul class="navbar-nav flex-row ">
-                            <li class="nav-item dropdown me-2 me-lg-0 d-none d-md-inline-block">
-                                <a class="nav-link dropdown-toggle" href="#" id="serviceDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Service
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="serviceDropdown">
-                                    <li><a class="dropdown-item" href="#">SERVICE</a></li>
-                                    <li><a class="dropdown-item" href="#">SERVICE-DETAIL</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown me-2 me-lg-0 d-none d-md-inline-block">
-                                <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Pages
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
-                                    <li><a class="dropdown-item" href="#">ABOUT</a></li>
-                                    <li><a class="dropdown-item" href="#">SERVICE</a></li>
-                                    <li><a class="dropdown-item" href="#">SERVICE DETAIL</a></li>
-                                    <li><a class="dropdown-item" href="#">PROJECT</a></li>
-                                    <li><a class="dropdown-item" href="#">PROJECT DETAIL</a></li>
-                                    <li><a class="dropdown-item" href="#">DONATION</a></li>
-                                    <li><a class="dropdown-item" href="#">DONATION DETAIL</a></li>
-                                    <li><a class="dropdown-item" href="#">TEAM</a></li>
-                                    <li><a class="dropdown-item" href="#">FAQS</a></li>
-                                    <li><a class="dropdown-item" href="#">TESTIMONIAL</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown me-2 me-lg-0 d-none d-md-inline-block">
-                                <a class="nav-link dropdown-toggle" href="#" id="blogDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Blog
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="blogDropdown">
-                                    <li><a class="dropdown-item" href="#">BLOG GRIDE</a></li>
-                                    <li><a class="dropdown-item" href="#">BLOG LIST</a></li>
-                                    <li><a class="dropdown-item" href="#">BLOG COLUMN</a></li>
-                                    <li><a class="dropdown-item" href="#">BLOG DETAIL</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </nav>
+                        <a class="nav-link" href="#">About </a>
 
+                    </li>
+                    <li class="nav-item me-2 me-lg-0 d-none d-md-inline-block">
+                        <a class="nav-link" href="#">Service <span><i class="fa-solid fa-chevron-down"></i></span></a>
+                        <ul class="dropdown">
+                            <li><a href="#home1">SERVICE</a></li>
+                            <li><a href="#home2">SERVICE DETAILS</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item me-2 me-lg-0 d-none d-md-inline-block">
+                        <a class="nav-link" href="#">Pages <span><i class="fa-solid fa-chevron-down"></i></span></a>
+                        <ul class="dropdown">
+                            <li><a href="#home1">ABOUT</a></li>
+                            <li><a href="#home2">SERVICE</a></li>
+                            <li><a href="#home3">SERVICE DETAILS</a></li>
+                            <li><a href="#home4">PROJECT</a></li>
+                            <li><a href="#home5">PROJECT DETAILS</a></li>
+                            <li><a href="#home6">DONATION</a></li>
+                            <li><a href="#home7">DONATION DETAILS</a></li>
+                            <li><a href="#home7">TEAM</a></li>
+                            <li><a href="#home7">FAQUS</a></li>
+                            <li><a href="#home7">TESTIMONIAL</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item me-2 me-lg-0 d-none d-md-inline-block">
+                        <a class="nav-link" href="#">Blog <span><i class="fa-solid fa-chevron-down"></i></span></a>
+                        <ul class="dropdown">
+                            <li><a href="#home1">BLOG GRID</a></li>
+                            <li><a href="#home2">BLOG LIST</a></li>
+                            <li><a href="#home3">BLOG 2COLUMN</a></li>
+                            <li><a href="#home4">BLOG DETAILS</a></li>
+
+                        </ul>
+                    </li>
                     <li class="nav-item me-2 me-lg-0 d-none d-md-inline-block">
                         <a class="nav-link" href="#">Contact</a>
                     </li>
@@ -145,10 +163,7 @@
                 <div class="third-menu d-flex align-items-center">
                     <div class="search-icon"><a href="#"><i class="fas fa-search"></i></a></i>
                     </div>
-                    <button class="btn btn-outline-primary ms-4" type="button">
-                        Get A Quote<i class="fas fa-download "></i>
-                    </button>
-
+                    <a href="#" class="quote-btn">Get A Quote</a>
                 </div>
             </div>
         </nav>
@@ -156,20 +171,33 @@
 
         <!-- Sidenav -->
         <div id="sidenav-1" class="sidenav" role="navigation" data-mdb-hidden="true" data-mdb-accordion="true">
-            <!-- Content -->
+            <section class="hero-section">
+                <div class="container">
+                    <div class="content">
+                        <h4 class="sub-heading">NATURAL ENVIRONMENT</h4>
+                        <h1 class="main-heading">Be Safe Controls Environment</h1>
+                        <p class="description">
+                            Professionally optimize interdependent intellectual interoperable
+                            connect best practices. Progressively fabricate done.
+                        </p>
+                        <div class="buttons">
+                            <a href="#" class="btn btn-primary-1">Let’s Talk <span><img
+                                        src="assets/img/button-shape.png" alt=""></span></a>
+                            <a href="#" class="btn btn-secondary">Read More</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" class="follow">Follow Us</a>
+                </div>
+            </section>
+
         </div>
     </header>
-
-    <!-- MDBootstrap JS -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"></script>
-
-
-
-
-
-    </head>
-
-
     <div class="news-marquee">
         <marquee behavior="scroll" direction="left">
             <div class="liner">
@@ -205,11 +233,8 @@
                 RENEWABLE-ENERGY
             </div>
         </marquee>
-
-
     </div>
-
-    <div class="cover">
+    <div class="cover pb-5">
         <div class="container">
             <div class="future">
                 <div class="car-image">
@@ -228,9 +253,6 @@
                     </div>
                     <h1 class="future-text">Environmental Sustainable
                         Forever Green Future</h1>
-
-
-
                     <div class="inner-text d-flex">
                         <img src="assets/img/about-icon-1.png" alt="image" width="40" height="40">
                         <div class="box mx-3">
@@ -240,8 +262,6 @@
                                 natural done</div>
                         </div>
                     </div>
-
-
                     <div class="inner-text d-flex">
                         <img src="assets/img/about-icon-2.png" alt="image" width="40" height="40">
                         <div class="box mx-3">
@@ -252,16 +272,98 @@
                         </div>
                     </div>
                     <hr>
-                    <div class="moreabout-btn">
+                    <div class="moreabout-btn d-flex">
                         <button class="btn btn-outline ms-4" type="button">
-                            More about <img src="assets/img/button-shape.png" alt="image">
-                        </button>&nbsp;&nbsp;
-                        <img src="assets/img/about-shape-2.png" alt="">
+                            More about <span> <img src="assets/img/button-shape.png" alt="image"></span>
+                        </button>
+                        <div class="about-shape-2">
+                            <img src="assets/img/about-shape-2.png" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <div class="our-services-outer">
+        <div class="container">
+            <h5>Our Services</h5>
+
+            <div class="our-services-outer-header">
+                <h2>Echofy Provide Environment
+                    Best Leading Services</h2>
+            </div>
+            <div class="our-service-outer-slider">
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-img p-5 "><img src="assets/img/service-icon1.png" class="card-img-top  float-start w-25" alt="..."></div>
+                            <div class="card-body text-start">
+                                <h5 class="card-title">Safe Environment</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-img p-5  "><img src="assets/img/service-icon2.png" class="card-img-top  float-start  w-25" alt="..."></div>
+                            <div class="card-body text-start">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-img p-5 "><img src="assets/img/service-icon3.png" class="card-img-top float-start  w-25" alt="..."></div>
+                            <div class="card-body text-start">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                                     
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Load jQuery First -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Load Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- Initialize the Carousel -->
+    <script>
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                rtl: true, // Enable this for right-to-left support
+                loop: true,
+                margin: 10,
+                nav: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 3
+                    }
+                }
+            });
+        });
+    </script>
+
 </body>
 
 </html>
