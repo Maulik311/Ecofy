@@ -404,7 +404,7 @@ ul.navbar-nav.flex-row>li:hover .dropdown {
 }
 
 button.btn.btn-outline.ms-4 {
-   
+
     background-color: #49AF45;
     color: white;
     border: none;
@@ -420,6 +420,7 @@ button.btn.btn-outline.ms-4 {
     z-index: 1;
 
 }
+
 button.btn.btn-outline.ms-4:before {
     position: absolute;
     content: "";
@@ -432,15 +433,18 @@ button.btn.btn-outline.ms-4:before {
     z-index: -1;
     transition: 0.5s;
 }
+
 button.btn.btn-outline.ms-4:hover:before {
     width: 100%;
     left: 0;
 }
-button.btn.btn-outline.ms-4:hover{
+
+button.btn.btn-outline.ms-4:hover {
     background-color: #fff;
     color: #3e9c3c;
     content: url(../img/button-shape-2.png);
 }
+
 button.btn.btn-outline.ms-4:hover span img {
     content: url(../img/button-shape-2.png);
     transform: scale(1.2);
@@ -545,4 +549,89 @@ button.btn.btn-outline.ms-4:hover span img {
 
 #footer a:hover {
     color: #49AF45;
+}
+
+/*  */
+.echofy-text-section {
+    position: relative;
+    background: #49AF45;
+    z-index: 1;
+    padding: 40px 0 44px;
+}
+
+.echofy-text-section .inner-container {
+    max-width: 1812px;
+    margin: 0 auto;
+}
+
+.echofy-text-section .inner-container {
+    max-width: 1812px;
+    margin: 0 auto;
+}
+
+.echofy-text-section .marquee {
+    position: relative;
+    --duration: 30s;
+    --gap: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    gap: 0px;
+}
+
+.echofy-text-section .marquee-block {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    gap: 0;
+    min-width: 87%;
+    -webkit-animation: scroll 30s linear infinite;
+    animation: scroll 30s linear infinite;
+}
+
+.echofy-text-section .marquee-block .content-box h6.title {
+    display: inline-block;
+    font-size: 30px;
+    color: #fff;
+    font-weight: 600;
+    padding: 0 48px;
+}
+
+.echofy-text-section .marquee-block .content-box h6.title img {
+    position: relative;
+    left: -49px;
+}
+
+
+.echofy-text-section .marquee-block {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    gap: 0;
+    min-width: 87%;
+    -webkit-animation: scroll 30s linear infinite;
+    animation: scroll 30s linear infinite;
+}
+
+.our-services-outer {
+    margin-bottom: 50px;
 }
