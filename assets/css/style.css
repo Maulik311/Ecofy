@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-image: url(../img/hero-bg2.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 950px;
+    position: relative;
+}
+
+.addreses>a {
+    color: #FFF;
+}
+
+li.nav-item.me-2.me-lg-0>a.nav-link {
+    color: #fff;
+}
+
+.flex-row {
+    flex-direction: row !important;
+    gap: 55px !important;
+}
+
+.col-md-3.d-flex.justify-content-center.justify-content-md-start.mb-3.mb-md-0>.address>.col-md-3.d-flex.justify-content-center.justify-content-md-start.mb-3.mb-md-0.email-address>a {
+    color: #fff;
+}
+
+.col-md-3.d-flex.justify-content-center.justify-content-md-start.mb-3.mb-md-0>.addreses>i.fas.fa-map-marker-alt.pe-2,
+i.far.fa-envelope-open.pe-2 {
+    color: #49af45;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+    background: white !important;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+    background: transparent !important;
+}
+
+a.dropdown-item {
+    color: black !important;
+}
+
+.dropdown-menu>li {
+    background-color: transparent !important;
+}
+
+/* Hover Dropdown Styles */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    margin-top: 0;
+}
+
+/* Change dropdown item background on hover */
+.dropdown-item:hover {
+    background-color: green;
+    color: white;
+    /* Optional: Change text color for contrast */
+}
+
+.dropdown-item:hover {
+    background-color: green !important;
+    color: white !important;
+    width: 100% !important;
+    /* Optional for better readability */
+}
+
+.nav-item .nav-link .dropdown-menu .dropdown-item:hover {
+    background-color: #49af45 !important;
+}
+
+.dropdown-item {
+    transition: background-color 0.6s ease, color 0.7s ease !important;
+}
+
+.nav-item {
+    align-items: center !important;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+    top: -7px;
+}
+
+i {
+    color: #fff;
+}
+
+a {
+    text-decoration: none !important;
+    color: #fff !important;
+}
+
+.bot {
+    border-bottom: 1px solid #e1e1e1;
+}
+
+
+
+
+@keyframes scroll {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1400px;
+    display: block;
+    box-sizing: border-box;
+}
+
+.news-marquee {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: white;
+    background-color: #49af45;
+    padding: 12px;
+}
+
+.scrolling-news {
+    display: inline-block;
+    animation: scroll 10s linear infinite;
+    padding: 10PX;
+}
+
+.liner img {
+    margin: 0 35px;
+    width: 45px;
+    /* padding: 20px; */
+    
+}
+
+.liner {
+    margin-top: 16px;
+    font-size: 30px;
+}
+
+.future {
+    display: flex;
+}
+
+.about-text {
+    margin-left: 100px;
+    margin-top: 120px;
+}
+
+.inner-text {
+    margin-bottom: 20px;
+    margin-top: 60px;
+}
+
+.inner-text1 {
+    margin-bottom: 25px;
+    display: flex;
+}
+
+.inner-text1>img {
+    width: 20px;
+    height: 20px;
+}
+
+.text.mb-2 {
+    font-size: 25px;
+}
+
+.inner-text>img {
+    margin-top: 20px;
+}
+
+.text-01 {
+    color: #49af45;
+    font-size: 15px;
+}
+
+.text {
+    margin-left: 2px;
+    font-size: 18px;
+}
+
+button.btn.btn-outline.ms-4 {
+    width: 205px;
+    height: 60px;
+    background-color: #49af45;
+    color: white;
+    border: none;
+}
+
+.award-img>img {
+    width: 250px;
+    position: absolute;
+}
+
+.car-image>img {
+    position: relative;
+    top: 110px;
+}
+
+.moreabout-btn {
+    margin-top: 50px;
+}
+
+.inner-01 {
+    margin-left: 390px;
+}
+
+.cover {
+    background-image: url(../img/about-bg.jpg);
+}
+
+.inner-01>img {
+    width: 60px;
+}
