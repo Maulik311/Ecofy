@@ -79,6 +79,16 @@ ul.navbar-nav.flex-row>li>.dropdown {
     border-top: 5px solid #49AF45;
 }
 
+.hero-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    /* bottom: 250px; */
+}
+
 ul.navbar-nav.flex-row>li>.dropdown>li {
     position: relative;
     top: 0;
@@ -158,15 +168,6 @@ ul.navbar-nav.flex-row>li:hover .dropdown {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.hero-section .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
 }
 
 .hero-section .content {
@@ -635,7 +636,7 @@ button.btn.btn-outline.ms-4:hover span img {
 .cover-1 {
     background-image: url(../img/service-bg.jpg);
     background-repeat: no-repeat;
-    background: cover;
+    background-size: cover;
 }
 
 .skill-text {
@@ -678,6 +679,7 @@ button.btn.btn-outline.ms-4:hover span img {
 .innnerimage>img {
     width: 534px;
 }
+
 .innnerimage {
     z-index: 7;
     position: relative;
@@ -806,21 +808,74 @@ span.true-mark {
     padding: 4px 7px;
     font-size: 20px;
 }
-.innerskill-2{
+
+.innerskill-2 {
     position: relative;
 }
+
 .skill-shape>img {
     width: 250px;
     position: absolute;
     z-index: 10;
     top: 1px;
     left: 0;
-    animation: dance4 5s infinite;      
+    animation: dance4 5s infinite;
 }
+
 .skill-shape-2>img {
     width: 150px;
     position: absolute;
     bottom: 1px;
     right: 0;
-    animation: dance4 5s infinite;      
+    animation: dance4 5s infinite;
+}
+
+h5.card-title {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.card-img.p-5 {
+    padding: 20px;
+}
+
+img.card-img-top.float-start.w-25 {
+    width: 90px !important;
+    margin-top: 30px;
+    margin-left: 28px;
+}
+
+.card>img.service {
+    position: relative;
+    width: 315px;
+    height: 200px;
+    /* margin-right: 40px; */
+    background-color: #f7f6ee;
+    /* bottom: 115px; */
+}
+
+.owl-carousel .owl-item img {
+    display: block;
+    /* width:100%; */
+}
+
+.card {
+    border: 0;
+    position: relative;
+}
+
+.card-content {
+    position: relative;
+}
+
+.card-content .service  {
+    padding: 28px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 22;
+}
+.owl-carousel .owl-stage-outer {
+    padding: 100px 0;
 }
